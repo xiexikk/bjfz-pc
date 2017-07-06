@@ -1,0 +1,927 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>prosperity</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/common.css" />
+<link rel="stylesheet" href="../css/detail.css" />
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/detail.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+	<!-- header begin -->
+	<div class="header clearfix">
+		<!-- hd begin -->
+		<div class="hd clearfix pr">
+			<div class="hd-inner w960 m0a">
+				<ul class="il fl">
+					<li><a href="../detail-service/dlise_cusser.html">客服服务</a></li>
+					<li><a href="../detail-service/dlise_subsinfo.html">订阅资询</a></li>
+					<li><a href="../detail-info/dliin_about.html">公司信息</a></li>
+				</ul><!-- il -->
+				<ul class="ir fr">
+					<li class="li01 logreg">
+						<div class="login">
+							<a href="javascript:;">登录</a><span class="line">/</span><a href="javascript:;">注册</a>
+						</div>
+						<div class="sub">
+							<div class="ltri"></div>
+							<div class="shd"><a href="javascript:;">登录</a><span class="line">|</span><a href="javascript:;">注册</a></div>
+							<div class="sbd">
+								<div class="bd-log">
+									<form action="">
+										<p>电子邮箱：</p>
+										<input type="text" class="txt"/>
+										<p>密码：</p>
+										<input type="password" class="txt"/>
+									</form>
+									<button>登&nbsp;&nbsp;录</button>
+									<div class="forgetPwdLine">
+										<a href="javascript:;" class="froPw fr">忘记密码？</a>
+										<input type="checkbox" id="remPsw" style="vertical-align:middle" /><label for="remPsw" class="remPsw">记住密码</label>										
+									</div>
+								</div><!-- bd-log -->
+								<div class="bd-reg">
+									<form action="" class="fill">
+										<div><input type="text" id="mailInput" class="txt" /><label for="mailInput">请尽量填写公司邮箱</label>电子邮箱</div>
+										<div><input type="password" id="pswInput" class="txt" /><label for="pswInput">密码</label>密码</div>
+										<div><input type="password" id="confPswInput" class="txt" /><label for="confPswInput">请再次输入密码</label>确认密码</div>
+										<div><input type="text" id="nameInput" class="txt" /><label for="nameInput">请填写您的真实姓名</label>姓名</div>
+										<div><input type="text" class="txt" />公司名称</div>
+										<div class="clearfix"><input type="tel" class="txt" />联系电话</div>
+									</form>
+									<div class="agLine"><input type="checkbox" id="agree" style="vertical-align:middle" /><label for="agree" class="agree">我同意<a href="javascript:;">注册条款</a>&amp;<a href="javascript:;">政策</a></label></div>
+									<button>注&nbsp;&nbsp;册</button>
+								</div><!-- bd-reg -->								
+							</div>
+						</div>
+					</li>
+					<li class="li02 olser"><a href="javascript:;" class="service">在线客服</a></li>
+					<li class="li03 gosp">
+						<a href="javascript:;" class="shopping">购物车(<em>1</em>)</a>
+						<div class="sub">
+							<div class="stri"></div>
+							<div class="slibd">
+								<a href="javascript:;" class="btn upBtn"><img src="../images/btnUp.png" width="13" height="7"></a>
+								<div class="play">
+									<ul>
+										<li>
+											<div class="goods">
+												<div class="pic"><a href="javascript:;"><img src="../images/tro01.jpg" width="61" height="123"></a></div>
+												<div class="txt">
+													<p class="name"><a href="javascript:;">SA2667KW-37</a></p>
+													<p class="mon">¥ <em>XXX.XX</em></p>
+													<p class="num card"><span>挂卡数量</span><a href="javascript:;" class="cl clL"></a><input type="text" value="1" class="count" /><a href="javascript:;" class="cl clR"></a></p>
+													<p class="num clo"><span>样布数量</span><a href="javascript:;" class="cl clL"></a><input type="text" value="1" class="count" /><a href="javascript:;" class="cl clR"></a></p>
+													<p class="sum">总价：¥ <em>XXX.XX</em></p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="goods">
+												<div class="pic"><a href="javascript:;"><img src="../images/tro01.jpg" width="61" height="123"></a></div>
+												<div class="txt">
+													<p class="name"><a href="javascript:;">SA2667KW-37</a></p>
+													<p class="mon">¥ <em>XXX.XX</em></p>
+													<p class="num card"><span>挂卡数量</span><a href="javascript:;" class="cl clL"></a><input type="text" value="1" class="count" /><a href="javascript:;" class="cl clR"></a></p>
+													<p class="num clo"><span>样布数量</span><a href="javascript:;" class="cl clL"></a><input type="text" value="1" class="count" /><a href="javascript:;" class="cl clR"></a></p>
+													<p class="sum">总价：¥ <em>XXX.XX</em></p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<a href="javascript:;" class="btn downBtn"><img src="../images/btnDown.png" width="13" height="7"></a>
+							</div>
+							<div class="slibt">
+								<div class="cal">
+									<p><i>¥ <em>XXX.XX</em></i>订单价值：</p>
+									<p><i>¥ <em>XX.XX</em></i>折扣：</p>
+									<p><i>¥ <em>XX.XX</em></i>标准送货：</p>
+									<div class="line"></div>
+									<p class="sum"><i>¥ <em>XXX.XX</em></i>总价：</p>
+								</div>
+								<button class="order">生成订单</button>
+								<a href="../detail-account/dliac_scar.html" target="_blank" class="car">购物车</a>
+							</div>
+						</div>
+					</li>
+				</ul><!-- ir -->
+			</div><!-- hd-inner end -->
+		</div><!-- hd end -->
+		
+		<!-- cen begin -->
+		<div class="cen clearfix pr">
+			<div class="cen-inner pr w960 m0a">
+				<div class="logo">
+					<h1><a href="../index.html" class="block ovhid">prosperity</a></h1>
+				</div><!-- logo -->
+				<div class="lan pa">
+					<a href="javascript:;" class="en">EN</a>
+					<a href="../index.html" class="cn">CN</a>
+				</div>
+			</div>
+		</div><!-- cen end -->
+		
+		<!-- nav begin -->
+		<div class="nav clearfix pr">
+			<div class="nav-inner pr w960 m0a">
+				<ul class="navUl">
+					<li class="li01">
+                    	<h2>
+                            <a href="javascript:;">S/S 16</a>
+                            <div class="tri"></div><!-- tri -->
+                        </h2>
+						<div class="subNav">
+							<ul class="subList">
+								<li class="scr01">
+									<a href="javascript:;" class="lihd">概念筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">Co-Flex</a>
+										<a href="javascript:;">Ultra Stretch</a>
+										<a href="javascript:;">The Heritage</a>
+										<a href="javascript:;">Feel It</a>
+										<a href="javascript:;">Re+Invent</a>
+										<a href="javascript:;">F2 Denim</a>
+										<a href="javascript:;">Blue Force</a>
+										<a href="javascript:;">Seal Denim</a>
+										<a href="javascript:;">J-Fit</a>
+										<a href="javascript:;">D-Light</a>
+										<a href="javascript:;">Rigid</a>
+									</div>
+								</li>
+								<li class="scr02">
+									<a href="javascript:;" class="lihd">成份筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">纯棉</a>
+										<a href="javascript:;">棉弹</a>
+										<a href="javascript:;">涤棉弹力</a>
+										<a href="javascript:;">涤棉</a>
+										<a href="javascript:;">纯天丝</a>
+										<a href="javascript:;">天丝混纺</a>
+										<a href="javascript:;">莫代尔</a>
+										<a href="javascript:;">功能性纤维</a>
+									</div>
+								</li>
+								<li class="scr03">
+									<a href="javascript:;" class="lihd">卖点筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>	
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>
+								</li>
+								<li class="scr04">
+									<a href="javascript:;" class="lihd">克重筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">7安以下</a>
+										<a href="javascript:;">7-10安</a>
+										<a href="javascript:;">10-12安</a>
+										<a href="javascript:;">12安以上</a>
+									</div>
+									<div class="pic fr">
+										<a href="javascript:;"><img src="../images/pic.png" width="176" height="145"></a>
+									</div>
+								</li>
+							</ul><!-- subList -->
+						</div><!-- subNav -->				
+					</li>
+					<li class="li02">
+						<h2>
+                        	<a href="javascript:;">F/W 16</a>
+							<div class="tri"></div><!-- tri -->
+						</h2>
+                        <div class="subNav">
+							<ul class="subList">
+								<li class="scr01">
+									<a href="javascript:;" class="lihd">概念筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">Co-Flex</a>
+										<a href="javascript:;">Ultra Stretch</a>
+										<a href="javascript:;">The Heritage</a>
+										<a href="javascript:;">Feel It</a>
+										<a href="javascript:;">Re+Invent</a>
+										<a href="javascript:;">F2 Denim</a>
+										<a href="javascript:;">Blue Force</a>
+										<a href="javascript:;">Seal Denim</a>
+										<a href="javascript:;">J-Fit</a>
+										<a href="javascript:;">D-Light</a>
+										<a href="javascript:;">Rigid</a>
+									</div>
+								</li>
+								<li class="scr02">
+									<a href="javascript:;" class="lihd">成份筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">纯棉</a>
+										<a href="javascript:;">棉弹</a>
+										<a href="javascript:;">涤棉弹力</a>
+										<a href="javascript:;">涤棉</a>
+										<a href="javascript:;">纯天丝</a>
+										<a href="javascript:;">天丝混纺</a>
+										<a href="javascript:;">莫代尔</a>
+										<a href="javascript:;">功能性纤维</a>
+									</div>
+								</li>
+								<li class="scr03">
+									<a href="javascript:;" class="lihd">卖点筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>	
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>
+								</li>
+								<li class="scr04">
+									<a href="javascript:;" class="lihd">克重筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">7安以下</a>
+										<a href="javascript:;">7-10安</a>
+										<a href="javascript:;">10-12安</a>
+										<a href="javascript:;">12安以上</a>
+									</div>
+									<div class="pic fr">
+										<a href="javascript:;"><img src="../images/pic.png" width="176" height="145"></a>
+									</div>
+								</li>
+							</ul><!-- subList -->
+						</div><!-- subNav -->
+					</li>
+					<li class="li03">
+						<h2>
+                            <a href="../list_spot.html">主推现货</a>
+                            <div class="tri"></div><!-- tri -->
+						</h2>
+                        <div class="subNav">
+							<ul class="subList">
+								<li class="scr02">
+									<a href="javascript:;" class="lihd">成份筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">纯棉</a>
+										<a href="javascript:;">棉弹</a>
+										<a href="javascript:;">涤棉弹力</a>
+										<a href="javascript:;">涤棉</a>
+										<a href="javascript:;">纯天丝</a>
+										<a href="javascript:;">天丝混纺</a>
+										<a href="javascript:;">莫代尔</a>
+										<a href="javascript:;">功能性纤维</a>
+									</div>
+								</li>
+								<li class="scr04">
+									<a href="javascript:;" class="lihd">克重筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">7安以下</a>
+										<a href="javascript:;">7-10安</a>
+										<a href="javascript:;">10-12安</a>
+										<a href="javascript:;">12安以上</a>
+									</div>
+									<div class="pic fr">
+										<a href="javascript:;"><img src="../images/pic.png" width="176" height="145"></a>
+									</div>
+								</li>
+							</ul><!-- subList -->
+						</div><!-- subNav -->
+					</li>
+					<li class="li04">
+                        <h2>	
+                            <a href="../list_attraction.html">产品卖点</a>
+							<div class="tri"></div>
+                        </h2>
+						<div class="subNav">
+							<ul class="subList">								
+								<li class="scr03">
+									<a href="javascript:;" class="lihd">卖点筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+									</div>
+									<div class="cllist">
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+									</div>
+									<div class="cllist">
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>								
+									<div class="pic fl">
+										<a href="javascript:;"><img src="../images/pic.png" width="176" height="145"></a>
+									</div>										
+								</li>							
+							</ul><!-- subList -->
+						</div><!-- subNav -->	
+                    </li>
+					<li>
+                    	<h2>
+                        	<a href="javascript:;">特色产品</a>
+                            <div class="tri"></div><!-- tri -->
+                        </h2>
+                        <div class="subNav">
+							<ul class="subList">
+								<li class="scr01">
+									<a href="javascript:;" class="lihd">概念筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">Co-Flex</a>
+										<a href="javascript:;">Ultra Stretch</a>
+										<a href="javascript:;">The Heritage</a>
+										<a href="javascript:;">Feel It</a>
+										<a href="javascript:;">Re+Invent</a>
+										<a href="javascript:;">F2 Denim</a>
+										<a href="javascript:;">Blue Force</a>
+										<a href="javascript:;">Seal Denim</a>
+										<a href="javascript:;">J-Fit</a>
+										<a href="javascript:;">D-Light</a>
+										<a href="javascript:;">Rigid</a>
+									</div>
+								</li>
+								<li class="scr02">
+									<a href="javascript:;" class="lihd">成份筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">纯棉</a>
+										<a href="javascript:;">棉弹</a>
+										<a href="javascript:;">涤棉弹力</a>
+										<a href="javascript:;">涤棉</a>
+										<a href="javascript:;">纯天丝</a>
+										<a href="javascript:;">天丝混纺</a>
+										<a href="javascript:;">莫代尔</a>
+										<a href="javascript:;">功能性纤维</a>
+									</div>
+								</li>
+								<li class="scr03">
+									<a href="javascript:;" class="lihd">卖点筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>	
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>
+								</li>
+								<li class="scr04">
+									<a href="javascript:;" class="lihd">克重筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">7安以下</a>
+										<a href="javascript:;">7-10安</a>
+										<a href="javascript:;">10-12安</a>
+										<a href="javascript:;">12安以上</a>
+									</div>
+									<div class="pic fr">
+										<a href="javascript:;"><img src="../images/pic.png" width="176" height="145"></a>
+									</div>
+								</li>
+							</ul><!-- subList -->
+						</div>
+                    </li>
+					<li>
+                    	<h2>
+                        	<a href="javascript:;">每月特惠</a>
+                            <div class="tri"></div><!-- tri -->
+                        </h2>
+                        <div class="subNav">
+							<ul class="subList">
+								<li class="scr01">
+									<a href="javascript:;" class="lihd">概念筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">Co-Flex</a>
+										<a href="javascript:;">Ultra Stretch</a>
+										<a href="javascript:;">The Heritage</a>
+										<a href="javascript:;">Feel It</a>
+										<a href="javascript:;">Re+Invent</a>
+										<a href="javascript:;">F2 Denim</a>
+										<a href="javascript:;">Blue Force</a>
+										<a href="javascript:;">Seal Denim</a>
+										<a href="javascript:;">J-Fit</a>
+										<a href="javascript:;">D-Light</a>
+										<a href="javascript:;">Rigid</a>
+									</div>
+								</li>
+								<li class="scr02">
+									<a href="javascript:;" class="lihd">成份筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">纯棉</a>
+										<a href="javascript:;">棉弹</a>
+										<a href="javascript:;">涤棉弹力</a>
+										<a href="javascript:;">涤棉</a>
+										<a href="javascript:;">纯天丝</a>
+										<a href="javascript:;">天丝混纺</a>
+										<a href="javascript:;">莫代尔</a>
+										<a href="javascript:;">功能性纤维</a>
+									</div>
+								</li>
+								<li class="scr03">
+									<a href="javascript:;" class="lihd">卖点筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>	
+									<div class="cllist">
+										<a href="javascript:;">T400</a>
+										<a href="javascript:;">ORGANIC</a>
+										<a href="javascript:;">TENCEL</a>
+										<a href="javascript:;">DUALFX</a>
+										<a href="javascript:;">LYCRA</a>
+										<a href="javascript:;">BI-STRETCH</a>
+										<a href="javascript:;">SELVAGE</a>
+										<a href="javascript:;">COLOR WEFT</a>
+										<a href="javascript:;">LINEN</a>
+										<a href="javascript:;">RAYON</a>
+										<a href="javascript:;">SORONA</a>
+										<a href="javascript:;">CoolMAX</a>
+										<a href="javascript:;">Lycra Beauty</a>
+										<a href="javascript:;">THERMOLITE</a>
+										<a href="javascript:;">TOUGHMAX</a>
+										<a href="javascript:;">LASTING FIT</a>
+										<a href="javascript:;">X FIT</a>
+										<a href="javascript:;">Celliant</a>
+									</div>
+								</li>
+								<li class="scr04">
+									<a href="javascript:;" class="lihd">克重筛选</a>
+									<div class="cllist">
+										<a href="javascript:;">7安以下</a>
+										<a href="javascript:;">7-10安</a>
+										<a href="javascript:;">10-12安</a>
+										<a href="javascript:;">12安以上</a>
+									</div>
+									<div class="pic fr">
+										<a href="javascript:;"><img src="../images/pic.png" width="176" height="145"></a>
+									</div>
+								</li>
+							</ul><!-- subList -->
+						</div>
+                  	</li>
+				</ul><!-- navUl -->
+				<div class="search pa">
+					<input type="text" value="搜索" />
+					<button class="pa"></button>
+				</div><!-- search -->				
+			</div><!-- nav-inner -->
+		</div><!-- nav -->	
+	</div><!-- header end -->
+	
+	<!-- content_info begin -->
+	<div class="content_info clearfix">
+		<div class="info-inner w960 m0a clearfix">
+			<!-- aside begin -->
+			<div class="aside fl">
+				<ul>
+					<li><a href="dliin_about.html">关于北江</a></li>
+					<li><a href="dliin_able.html">可持续发展</a></li>
+					<li><a href="dliin_factory.html">工厂设施</a></li>
+					<li><a href="dliin_honor.html">荣誉认证</a></li>
+					<li><a href="dliin_create.html" class="current">创新开发设计</a></li>
+					<li><a href="dliin_activity.html">展会活动</a></li>
+					<li><a href="dliin_information.html">最新资讯</a></li>
+					<li><a href="dliin_privacy.html">隐私及法律条款</a></li>
+					<li><a href="dliin_contact.html">联系我们</a></li>
+				</ul>
+			</div><!-- aside end -->
+			
+			<!-- con_contact begin -->
+			<div class="con_com fr con_contact">
+				<div class="sel">
+					<form action="">
+						<span>国家：</span>
+						<!--<em id="country" class="simsel">
+							<a href="javascript:;" class="send"><i></i><em>--请选择国家--</em></a>
+							<ul>
+								<li><a href="javascript:;">中国</a></li>
+								<li><a href="javascript:;">美国</a></li>
+								<li><a href="javascript:;">日本</a></li>
+								<li><a href="javascript:;">泰国</a></li>
+								<li><a href="javascript:;">德国</a></li>
+								<li><a href="javascript:;">韩国</a></li>
+							</ul>
+						</em>-->
+						<select name="s-country" id="country" class="simsel">
+                        	<option value ="请选择国家">请选择国家</option>
+                        	<option value ="中国">中国</option>
+                            <option value ="美国">美国</option>
+                            <option value ="德国">德国</option>
+                            <option value ="泰国">泰国</option>
+                            <option value ="韩国">韩国</option>
+                        </select>
+                    </form>
+                    
+					<form action="">
+						<span>城市：</span>
+						<!--<em id="city" class="simsel">
+							<a href="javascript:;" class="send"><i></i><em>--请选择城市--</em></a>
+							<ul>
+								<li><a href="javascript:;">广州</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">上海</a></li>
+								<li><a href="javascript:;">厦门</a></li>
+								<li><a href="javascript:;">武汉</a></li>
+								<li><a href="javascript:;">韶关</a></li>
+							</ul>
+						</em>-->
+						<select name="s-country" id="city" class="simsel">
+                        	<option value ="请选择城市">请选择城市</option>
+                        	<option value ="广州">广州</option>
+                            <option value ="上海">上海</option>
+                            <option value ="厦门">厦门</option>
+                            <option value ="武汉">武汉</option>
+                            <option value ="韶关">韶关</option>
+                        </select>
+					</form>
+					<form action="">
+						<span >街道：</span>
+						<!--<em id="street" class="simsel">
+							<a href="javascript:;" class="send"><i></i><em>--请选择街道--</em></a>
+							<ul>
+								<li><a href="javascript:;">和平街</a></li>
+								<li><a href="javascript:;">和平街</a></li>
+								<li><a href="javascript:;">和平街</a></li>
+								<li><a href="javascript:;">和平街</a></li>
+								<li><a href="javascript:;">和平街</a></li>
+								<li><a href="javascript:;">和平街</a></li>
+							</ul>
+						</em>-->
+                        <select name="s-country" id="city" class="simsel">
+                        	<option value ="请选择街道">请选择街道</option>
+                        	<option value ="和平1街">和平1街</option>
+                            <option value ="和平2街">和平2街</option>
+                            <option value ="和平3街">和平3街</option>
+                            <option value ="和平4街">和平4街</option>
+                            <option value ="和平5街">和平5街</option>
+                        </select>
+					</form>					
+				</div><!-- sel -->
+                <div id="dituContent" class="map"></div>
+                <script type="text/javascript">
+					//创建和初始化地图函数：
+					function initMap(){
+						createMap();//创建地图
+						setMapEvent();//设置地图事件
+						addMapControl();//向地图添加控件
+						addMarker();//向地图中添加marker
+					}
+					
+					//创建地图函数：
+					function createMap(){
+						var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+						var point = new BMap.Point(113.348531,23.146145);//定义一个中心点坐标
+						map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+						window.map = map;//将map变量存储在全局
+					}
+					
+					//地图事件设置函数：
+					function setMapEvent(){
+						map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+						map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+						map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+						map.enableKeyboard();//启用键盘上下左右键移动地图
+					}
+					
+					//地图控件添加函数：
+					function addMapControl(){
+						//向地图中添加缩放控件
+					var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+					map.addControl(ctrl_nav);
+						//向地图中添加缩略图控件
+					var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+					map.addControl(ctrl_ove);
+						//向地图中添加比例尺控件
+					var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+					map.addControl(ctrl_sca);
+					}
+					
+					//标注点数组
+					var markerArr = [{title:"北江纺织",content:"广州市天河区天河北路626号保利中宇广场A座24楼",point:"113.348266|23.146677",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+						 ];
+					//创建marker
+					function addMarker(){
+						for(var i=0;i<markerArr.length;i++){
+							var json = markerArr[i];
+							var p0 = json.point.split("|")[0];
+							var p1 = json.point.split("|")[1];
+							var point = new BMap.Point(p0,p1);
+							var iconImg = createIcon(json.icon);
+							var marker = new BMap.Marker(point,{icon:iconImg});
+							var iw = createInfoWindow(i);
+							var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+							marker.setLabel(label);
+							map.addOverlay(marker);
+							label.setStyle({
+										borderColor:"#808080",
+										color:"#333",
+										cursor:"pointer"
+							});
+							
+							(function(){
+								var index = i;
+								var _iw = createInfoWindow(i);
+								var _marker = marker;
+								_marker.addEventListener("click",function(){
+									this.openInfoWindow(_iw);
+								});
+								_iw.addEventListener("open",function(){
+									_marker.getLabel().hide();
+								})
+								_iw.addEventListener("close",function(){
+									_marker.getLabel().show();
+								})
+								label.addEventListener("click",function(){
+									_marker.openInfoWindow(_iw);
+								})
+								if(!!json.isOpen){
+									label.hide();
+									_marker.openInfoWindow(_iw);
+								}
+							})()
+						}
+					}
+					//创建InfoWindow
+					function createInfoWindow(i){
+						var json = markerArr[i];
+						var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+						return iw;
+					}
+					//创建一个Icon
+					function createIcon(json){
+						var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+						return icon;
+					}
+					
+					initMap();//创建和初始化地图
+				</script>
+				<div class="addr">
+					<div class="addr-in">
+						<ul>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+							<li>
+								<p>广州营销总部</p>
+								<p>地&nbsp;&nbsp;址：<span>中国广州市天河区天河北路626号保利中宇广场A座24楼</span></p>
+								<p>联系电话：<span>020-85608989</span></p>
+								<p>传&nbsp;&nbsp;真：<span>020-85608986</span></p>
+								<p>联系邮箱：<span>mail@prosperity-textile.com</span></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- con_contact end -->
+		</div><!-- info-inner -->
+	</div><!-- content_info end -->
+	
+	<!-- footer begin -->
+	<div class="footer clearfix">
+		<div class="footer-inner w960 m0a clearfix">
+			<div class="lt fl">
+				<ul>
+					<li>
+						<a href="../detail-info/dliin_about.html">关于北江</a>
+						<a href="../detail-info/dliin_able.html">可持续发展</a>
+						<a href="../detail-info/dliin_factory.html">工厂设施</a>
+						<a href="../detail-info/dliin_honor.html">荣誉认证</a>
+						<a href="../detail-info/dliin_create.html">创新开发设计</a>
+						<a href="../detail-info/dliin_activity.html">展会活动</a>
+						<a href="../detail-info/dliin_information.html">最新资讯</a>
+					</li>
+					<li>
+						<a href="javascript:;">订阅资讯</a>
+						<a href="../detail-info/dliin_privacy.html">隐私及法律条款</a>
+						<a href="../detail-info/dliin_contact.html">联系我们</a>			
+					</li>
+					<li class="thi">
+						<a href="javascript:;" class="service">在线客服</a>
+						<a href="../detail-service/dlise_cusser.html">客户服务</a>
+						<a href="../detail-service/dlise_orderpro.html">订单流程</a>		
+						<a href="../detail-service/dlise_comques.html">常见问题</a>
+					</li>
+				</ul>
+			</div>
+			<div class="rt fr">
+				<div class="show clearfix">
+					<div class="wechat"><img src="../images/wechat.png" width="84" height="84"></div>
+					<ul class="icon">
+						<li class="li01"><a href="javascript:;" title="微信"></a></li>
+						<li class="li02"><a href="javascript:;" title="微博"></a></li>
+						<li class="li03"><a href="javascript:;" title="安卓"></a></li>
+						<li class="li04"><a href="javascript:;" title="苹果"></a></li>
+						<li class="li05"><a href="javascript:;" title="pad"></a></li>
+					</ul>
+				</div>
+				<div class="search pr clearfix">
+					<input type="text" value="输入电子邮箱，了解最新的时尚资讯" />
+					<button>订阅</button>
+				</div>
+				<div class="copyright">
+					<p><em>2014 &copy; PROSPERITY TEXTILE 版权所有</em>沪ICP备09040112号<span>上海工商</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="bt">
+			<div class="lopic"><a href="index.html" title="welcome"><img src="../images/lopic.png" width="143" height="39"></a></div>
+		</div>
+	</div><!-- footer end -->
+</body>
+</html>

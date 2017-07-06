@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner{ height:500px; padding:26px 0 38px 0;}
+.banner .banner-inner{ width:960px; height:480px; margin:0 auto;}
+.banner .banner-inner .play{ width:100%; height:100%;}
+.banner-inner .bannerImg{ height:480px; margin:0 auto;}
+.banner-inner .bannerImg li{ width:960px; height:480px;}
+.banner-inner .lrBtn{ width:1050px; height:43px; left:50%; top:50%; margin:-10px 0 0 -525px;}
+.banner-inner .lrBtn .lBtn,.banner-inner .lrBtn .rBtn{ display:block; width:21px; height:43px;}
+.banner-inner .lrBtn .lBtn{ background:url(../images/btn_l.png) no-repeat;}
+.banner-inner .lrBtn .rBtn{ background:url(../images/btn_r.png) no-repeat;}
+.banner-inner .dots{ left:50%; top:497px;}
+.banner-inner .dots li{ float:left; width:7px; height:7px; line-height:7px; margin:0 10px; background:url(../images/dot.png) no-repeat; cursor:pointer;}
+.banner-inner .dots .current{ background-image:url(../images/dot_hover.png);}
+
+.conHd{ position:relative; overflow:hidden; height:36px; text-align:center;}
+.conHd h2{ position:absolute; left:50%; /*transform:translateX(-50%);*/ top:0; padding:0 20px; font-size:28px; background:#fff; color:#000; font-weight:normal;}
+.series-inner .hd h2{ margin-left:-60px;}
+.attr-inner .hd h2,.hot-inner .hd h2{ margin-left:-100px;}
+.conHd .line{ position:absolute; left:0; top:50%; overflow:hidden; width:100%; height:1px; background:#000;}
+
+.series{ padding:65px 0 0 0;}
+.series .series-inner{}
+.series-inner .bd ul{ overflow:hidden;}
+.series-inner .bd ul li{ float:left; width:309px; padding:48px 16px 0 0; text-align:center;}
+.series-inner .bd ul li .pic a img:hover{
+	filter: alpha(opactiy=85);
+	-ms-filter: "alpha(opacity=85)";
+	-moz-opacity: .85;
+	-khtml-opacity: .85;
+	opacity: .85;
+}
+.series-inner .bd ul li.noPr{ padding-right:0;}
+.series-inner .bd ul li a{ display:block; color:#000;}
+.series-inner .bd ul li a:hover{ color:#003755;}
+.series-inner .bd ul li .txt .des{ font-size:20px; padding:15px 0 7px 0;}
+.attr{ padding:75px 0 0 0;}
+.attr .attr-inner{}
+.attr-inner .bd{ overflow:hidden; padding:48px 0 0 0;}
+.attr-inner .bd a{ display:block; color:#fff;}
+/*.attr-inner .bd a img:hover{
+	filter: alpha(opactiy=85);
+	-ms-filter: "alpha(opacity=85)";
+	-moz-opacity: .85;
+	-khtml-opacity: .85;
+	opacity: .85;
+}*/
+.attr-inner .bd a:hover,.attr-inner .bd a.current{ color:#0092d9;}
+.attr-inner .bd .lp{ position:relative; width:586px; height:618px;}
+.attr-inner .bd .lp .txt{ position:absolute; left:40px; top:500px;}
+.attr-inner .bd .lp .txt span{ display:block; font-size:30px;}
+.attr-inner .bd .rp{ width:364px;}
+.attr-inner .bd .rp .ss{ position:relative; height:201px;}
+.attr-inner .bd .rp .ss .txt{ position:absolute; left:10px; top:50%; line-height:2em;}
+.attr-inner .bd .rp .ss .txt span{ display:block; font-size:20px;}
+.attr-inner .bd .rp .ll{ height:157px; border:1px solid #f2f6f5; padding:42px 0 0 50px; margin:7px 0;}
+.attr-inner .bd .rp .ll a{ color:#000;}
+.attr-inner .bd .rp .ll .txt{ width:121px; padding:8px 0 0 0;}
+.attr-inner .bd .rp .ll .txt span{ display:block; font-size:22px;}
+
+.hot{ padding:85px 0;}
+.hot .hot-inner{}
+.hot-inner .bd{ height:362px; padding:50px 0 0 0;}
+.hot-inner .bd .play{ position:relative; overflow:hidden; width:100%; height:100%;}
+.hot-inner .bd ul{ position:absolute; overflow:hidden;}
+.hot-inner .bd ul li{ float:left; width:240px; text-align:center;}
+.hot-inner .bd ul li a{ display:block;}
+.hot-inner .bd ul li .pic{ text-align:center;}
+.hot-inner .bd ul li .pic img{ display:inline;}
+.hot-inner .bd ul li .txt{ line-height:2em; padding:20px 0 0 0;}
+.hot-inner .bd ul li .txt span{ display:block; font-size:16px;}
+.hot-inner .bd .lrBtn{ width:1050px; height:43px; left:50%; top:50%; margin:-10px 0 0 -525px;}
+.hot-inner .bd .lrBtn .lBtn,.hot-inner .bd .lrBtn .rBtn{ display:block; width:21px; height:43px;}
+.hot-inner .bd .lrBtn .lBtn{ background:url(../images/btn_l.png) no-repeat;}
+.hot-inner .bd .lrBtn .rBtn{ background:url(../images/btn_r.png) no-repeat;}
+
+/* ch 9.14 */
+.attr-inner .bd .rp .ll .txt{ width:200px;}
+.attr-inner .bd .rp .ll .txt span{ padding-bottom:5px;}
